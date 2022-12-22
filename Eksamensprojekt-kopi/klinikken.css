@@ -1,0 +1,23 @@
+.navbar-brand {
+    font-size: 35px;
+}
+
+.nav-item {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    background: grey;
+    
+}
+.btn-primary{
+    text-align: center;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    font-size: 110%;
+    margin-bottom: 1.5vh;
+}
+
+

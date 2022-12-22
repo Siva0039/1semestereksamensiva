@@ -1,0 +1,53 @@
+.navbar-brand {
+    font-size: 35px;
+}
+
+.nav-item {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    background: grey;
+    
+}
+
+.tekst {
+    position: relative;
+    top: 3vh;
+}
+
+.tekst2 {
+    position: relative;
+    top: 0vh;
+}
+
+.btn-group {
+    margin-left: 20px;
+    font-size: 200px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+
+}
+/* Dropdown design */
+.dropdown.open .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-bottom: 4px dashed;
+    border-top: 0px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}

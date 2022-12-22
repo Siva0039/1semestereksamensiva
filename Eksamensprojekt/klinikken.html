@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”robots” content=”noindex”>
+    <title>Lægerne</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="klinikken.css">
+
+    
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg fw-bold navbar-light bg-light  bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ringkøbing Lægehus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="klinikken.html">Klinikken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="personale.html">Læger og personale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="svar.html">Find svar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-image" style="max-width: 120rem; max-height: 80rem">
+      <img src="./Materialer/lege.png" alt="" class="w-100" style="opacity: 75%;"/>
+    </div>
+    <!-- 3 kolonner -->
+    <div class="container">
+      <!-- fs-4 tekststørrelse -->
+      <div class="row fs-4">
+        <div class="col">
+          <p>Solbærvej 22
+            0000 ukendt</p>
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 200px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17805.48832149968!2d8.246261253254342!3d56.09334926215338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5b18a40b6979%3A0x9db89a9c765e04af!2s6950%20Ringk%C3%B8bing!5e0!3m2!1sda!2sdk!4v1671627633216!5m2!1sda!2sdk" 
+              style="border:0" allowfullscreen></iframe>
+          </div> 
+        </div>
+        <div class="col order-5">
+          <!-- Button trigger modal -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#knap1">  
+          Klinikkens telefontider</button>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#knap2">  
+          Telefonkonsulation</button>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#knap3">  
+          Konsulationstider</button>
+        
+        </div>
+        <div class="col order-1">
+          Åbningstider <br>
+            Mandag-Tors: 00:00-00:00 <br>
+            Lørdag: 00:00-00:00 <br>
+            Fredag: 00:00-00:00 <br>
+            Søndag/Hellidage: Lukket <br>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal knap1 -->
+<div class="modal fade" id="knap1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="staticBackdropLabel">Telefonkonsulation</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Mandag til fredag: kl.00-00
+        og igen	kl. 00-00 
+        <br>
+        Der kan bestilles tid og fornyes
+        recepter, når klinikken har åben på
+        telefonnr. 00 00 00 00 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Modal knap2 -->
+<!-- Ændrer id for at vise den vindue, den skal vise til de enkelte buttons -->
+<div class="modal fade" id="knap2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Telefonkonsulation</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lægerne har “ringe tilbage tid”<br>
+        Hverdage mellem 00-00
+        <br> <br>
+        <h4 class="fw-bold">OBS!</h4>
+        For at få telefonkonsulation bedes der at booke en tid hos sekretæren, indenfor klinikkens åbningstider
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!-- Modal knap3 -->
+<div class="modal fade" id="knap3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Konsulationstider</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Konsulationstider
+        <br>
+        Man-tors: 00-00
+        Fredag: 00-00
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+      </div>
+    </div>
+    </div>
+  </div>
+<!-- 3 kolonner med 1 card i hver med informationer -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-center card-title">Praktisk info</h5>
+          <p class="text-center card-text">Praktisk info om klinikken</p>
+        </div>
+      </div>
+    </div>
+    <div class="col order-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-center card-title">Lægevagten</h5>
+          <p class="card-text">
+          Hvis man har brug for
+          lægevagten udenfor 
+          Åbningstidspunktet
+          Så ring til 00 00 00 01 for at få fat 
+          på lægevagten midt-vest.
+           </p>
+        </div>
+      </div>
+    </div>
+    <div class="col order-1">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-center card-title">Til lægehuset</h5>
+          <p  class="card-text">Parkering <br> Foran lægehuset er der stor p-plads <br> Der er også offentlige transport til lægehuset</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+ <!-- footer -->
+ <footer style="background-color:grey;">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="mb-3" style="letter-spacing: 2px; color: black">Klinikkens info:</h5>
+        <p>
+          Velkomen til Ringkøbing lægerenes hjemmeside, her kan I finde svar på jeres helbred og være i gode hænder.
+          Der kan også yderliger findes informationer, hvis man er usikker på sygedomme og hvordan det er 
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="mb-3" style="letter-spacing: 2px; color: black">links</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-1">
+            <a href="index.html" style="color: #4f4f4f;">Forside</a>
+          </li>
+          <li class="mb-1">
+            <a href="klinikken.html" style="color: #4f4f4f;">Klinikken</a>
+          </li>
+          <li class="mb-1">
+            <a href="personale.html" style="color: #4f4f4f;">Læger og personale</a>
+          </li>
+          <li>
+            <a href="svar.html" style="color: #4f4f4f;">Find svar</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="mb-1" style="letter-spacing: 2px; color: black;">Åbningstider (Klinikken)</h5>
+        <table class="table" style="color: #4f4f4f; border-color: #666;">
+          <tbody>
+            <tr>
+              <td>Mon-TOR:</td>
+              <td>00 - 00</td>
+            </tr>
+            <tr>
+              <td>FREDAG</td>
+              <td>00 - 00</td>
+            </tr>
+            <tr>
+              <td>LØRDAG</td>
+              <td>00 - 00</td>
+            </tr>
+            <tr>
+              <td>SØN/HEL</td>
+              <td>LUKKET</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" style="text-decoration: none;" href="https://mdbootstrap.com/">MDBootstrap.com｜Dette site har kun til undervisningsformål</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- End of .container -->
+
+ 
+
+
+    
+      
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
